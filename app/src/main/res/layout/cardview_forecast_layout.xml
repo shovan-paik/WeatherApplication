@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#6EB2E9"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+            
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:id="@+id/dayNameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday\nJan 11, 2018\n07:46:33 PM"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/text_color_black"
+                    android:gravity="left"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/iconIV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/cloud"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/minTempTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Min: 9.2°C"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/text_color_black"
+                android:gravity="right"
+                />
+            <TextView
+                android:id="@+id/maxTempTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Max: 18.0°C"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/text_color_black"
+                android:gravity="right"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

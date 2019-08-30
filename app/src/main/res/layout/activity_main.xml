@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/currentBT"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/button_current"
+            android:background="@color/button_background_black"
+            android:textColor="@color/button_text_white"
+            />
+
+        <Button
+            android:id="@+id/forecastBT"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/button_7_days_forecast"
+            android:background="@color/button_background_black"
+            android:textColor="@color/button_text_white"
+            android:layout_marginLeft="2dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/homeFM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </fragment>
+
+
+    </LinearLayout>-->
+
+   <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+       android:id="@+id/autoCompleteTV"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Search a city"
+
+       />
+
+
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/tabLayoutID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#176BAD"
+    app:tabTextColor="@color/button_text_white"
+    app:tabIndicatorColor="#009688"
+    app:tabIndicatorHeight="4dp"
+    >
+
+
+</com.google.android.material.tabs.TabLayout>
+
+   <androidx.viewpager.widget.ViewPager
+       android:id="@+id/viewPagerID"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+   </androidx.viewpager.widget.ViewPager>
+
+
+
+</LinearLayout>
